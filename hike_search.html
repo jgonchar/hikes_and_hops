@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset='utf-8'>
+    <title>Search | Hikes and Hops</title>
+    <meta name='description' content='Looking to grab a beer after a hike? Find brews near your favorite hikes -- or vice versa!'>
+    <meta name='author' content='Jessica Gonchar'>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href='./css/normalize.css'>
+    <link rel="stylesheet" href='./css/skeleton.css'>
+    <link rel='stylesheet' href='./css/main.css'>
+    <link rel='stylesheet' href='./css/hike_search.css'>
+    <!-- Javascript -->
+    <script src='https://use.fontawesome.com/bdc75e996c.js'></script>
+    <script type='text/javascript' src='./js/jquery.min.js'></script>
+    <script type='text/javascript' src='./js/hikesnhops.js'></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon_1.ico">
+  </head>
+  <body>
+    <div id='logobar'>
+      <a href='./index.html'>
+        <div class='nav-logo'>
+          <img src='./img/tinylogo.png'>
+        </div>
+      </a>
+    </div>
+    <!-- Top banner -->
+    <ul id='navbar'>
+      <li class='nav-tile'><a href='./index.html''>Home</a></li>
+      <li class='nav-tile'><a href='#'>About</a></li>
+      <li class='nav-tile dropdown'>
+        <a href='./hike_search.html' button class='dropbtn'>Find a Hike</a></button>
+        <div class='dropdown-content'>
+          <a href='#'>Most popular</a>
+          <a href='#'>Hikes near Seattle</a>
+          <a href='#'>Browse all</a>
+        </div>
+      </li>
+      <li class='nav-tile'><a href='./blog.html'>Blog</a></li>
+      <li class='nav-tile'><a href='#'>Sign in or Join</a></li>
+    </ul>
+    <div class='container'>
+      <!-- Find a hike -->
+      <h1>Find a Hike</h1>
+      <div class='findhike-searchbar'>
+        <input type='search' id='findhike-search' placeholder='Search for a hike by name...' />
+        <div id='hikesearch-submit'>
+          <button>Search</button>
+        </div>
+        <div id='advanced-search'>
+          <a id='advanced-search-toggle' href='#'>
+            <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i>
+          Advanced search</a>
+        </div>
+      </div>
+      <div id='advanced-search-options'>
+        <hr>
+        <div class='column-20'>
+          <h3>Features</h3>
+          <ul>
+            <li>
+              <input type='checkbox' name='features-list' value='coast' id='features_1'>
+              <label for='features_1'>Coast</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='rivers' id='features_2'>
+              <label for='features_2'>Rivers</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='lakes' id='features_3'>
+              <label for='features_3'>Lakes</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='waterfalls' id='features_4'>
+              <label for='features_4'>Waterfalls</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='meadows' id='features_5'>
+              <label for='features_5'>Meadows</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='forest' id='features_6'>
+              <label for='features_6'>Forest</label>
+            </li>
+            <li>
+              <input type='checkbox' name='features-list' value='camping' id='features_7'>
+              <label for='features_7'>Camping</label>
+            </li>
+          </ul>
+        </div>
+        <div class='column-20'>
+          <h3>Mileage</h3>
+          <select name='elevation-options'>
+            <option value='0'>No limit</option>
+            <option value='3'>Under 3 miles</option>
+            <option value='8'>3-8 miles</option>
+            <option value='12'>8-12 miles</option>
+            <option value='13'>Over 12 miles</option>
+          </select>
+        </div>
+        <div class='column-30'>
+          <h3>Elevation</h3>
+          <select name='elevation-options'>
+            <option value='0'>No limit</option>
+            <option value='500'>Negligible: Less than 500 ft</option>
+            <option value='1500'>Minimum: 500 - 1500 ft</option>
+            <option value='3000'>Moderate: 1500 - 3000 ft</option>
+            <option value='10000'>Strenuous: More than 3000 ft</option>
+          </select>
+        </div>
+        <div class='column-30'>
+          <h3>Regions</h3>
+          <select name='region-options'>
+            <option value='all'>Include all regions</option>
+            <option value='central'>Central Washington</option>
+            <option value='eastern'>Eastern Washington</option>
+            <option value='n-cascades'>North Cascades</option>
+            <option value='rainier'>Mount Rainier Area</option>
+            <option value='puget'>Puget Sound and Islands</option>
+            <option value='olympic'>Olympic Peninsula</option>
+            <option value='snoqualmie'>Snoqualmie Region</option>
+            <option value='s-cascades'>South Cascades</option>
+            <option value='c-cascades'>Central Cascades</option>
+            <option value='issaquah'>Issaquah Alps</option>
+            <option value='sw'>Southwest Washington</option>
+          </select>
+        </div>
+      </div>
+      <h1>Search results</h1>
+    </div>
+    <footer class='footer'>
+      <div class='container'>
+        <p class='footer-links'>
+          <a href='#'>BLOG</a>
+          ·
+          <a href='#'>HIKES</a>
+          ·
+          <a href='#'>BREWS</a>
+          ·
+          <a href='#'>CONTACT</a>
+        </p>
+        <div class='footer-left'>
+          <p class='footer-about'>About Hikes and Hops</p>
+          <p>Hikes and Hops blends a passion for exploring the outdoors with the love of a good craft beer. Search for hikes and nearby breweries for when you're done. Quisque placerat, enim ut aiquam elementum, justo mi malesuada sapien, sed iaculis ante nulla a ipsum. <a href='#'>Read more here.</a></p>
+        </div>
+        <div class='footer-right'>
+          <p>Join Hikes and Hops</p>
+          <form action='#' method='post'>
+            <input type='text' name='name' placeholder='Name' />
+            <input type='text' name='email' placeholder='Email address' />
+            <a href='#'><button>Join now</button></a>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

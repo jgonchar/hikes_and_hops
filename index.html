@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset='utf-8'>
+    <title>Hikes and Hops</title>
+    <meta name='description' content='Looking to grab a beer after a hike? Find brews near your favorite hikes -- or vice versa!'>
+    <meta name='author' content='Jessica Gonchar'>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href='./css/normalize.css'>
+    <link rel="stylesheet" href='./css/skeleton.css'>
+    <link rel='stylesheet' href='./css/main.css'>
+    <link rel='stylesheet' href='./css/home.css'>
+    <!-- Javascript -->
+    <script src='https://use.fontawesome.com/bdc75e996c.js'></script>
+    <script type='text/javascript' src='./js/jquery.min.js'></script>
+    <script type='text/javascript' src='./js/hikesnhops.js'></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/favicon_1.ico">
+  </head>
+  <body>
+    <div id='logobar'>
+      <a href='./index.html'>
+        <div class='nav-logo'>
+          <img src='./img/tinylogo.png'>
+        </div>
+      </a>
+    </div>
+    <ul id='navbar'>
+      <!-- Top banner -->
+      <li class='nav-tile'><a href='./index.html''>Home</a></li>
+      <li class='nav-tile'><a href='#'>About</a></li>
+      <li class='nav-tile dropdown'>
+        <a href='./hike_search.html' button class='dropbtn'>Find a Hike</a></button>
+        <div class='dropdown-content'>
+          <a href='#'>Most popular</a>
+          <a href='#'>Hikes near Seattle</a>
+          <a href='#'>Browse all</a>
+        </div>
+      </li>
+      <li class='nav-tile'><a href='./blog.html'>Blog</a></li>
+      <li class='nav-tile'><a href='#'>Sign in or Join</a></li>
+    </ul>
+    <!-- Splash picture -->
+    <div class='splash'>
+      <!-- Main content -->
+      <div class='hike-searchbar'>
+        <input type='search' id='hike-search' placeholder='Search for a hike or brewery by name...' />
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='one-third column'>
+          <h2>Favorite winter hikes</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non nunc vitae tellus imperdiet maximus. Proin vitae lacus vitae metus tempor posuere. Curabitur sit amet vestibulum justo.
+          </p>
+          <a class='read-more-link' href='#'><button>Read more >></button></a>
+        </div>
+        <div class='one-third column'>
+          <h2>What we're drinking</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non nunc vitae tellus imperdiet maximus. Proin vitae lacus vitae metus tempor posuere. Curabitur sit amet vestibulum justo.</p>
+          <a class='read-more-link' href='#'><button>Read more >></button></a>
+        </div>
+        <div class='one-third column'>
+          <h2>Recent blog posts</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non nunc vitae tellus imperdiet maximus. Proin vitae lacus vitae metus tempor posuere. Curabitur sit amet vestibulum justo.</p>
+          <a class='read-more-link' href='./blog.html'><button>Read more >></button></a>
+        </div>
+      </div>
+    </div>
+    <footer class='footer'>
+      <div class='container'>
+        <div class='row'>
+        <div class='one-half column'>
+        <p> </p>
+      </div>
+      <div class='one-half column'>
+        <h4>Join Hikes and Hops</h4>
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Name</label>
+              <input class="u-full-width" type="email" placeholder="Hiker Hannah" id="exampleEmailInput">
+            </div>
+            <div class="six columns">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="HikerHanah@mailbox.com" id="exampleEmailInput">
+            </div>
+          </div>
+          <input class="button" type="submit" value="Join now">
+        </form>
+      </div>
+    </div>
+      <p class='footer-links'>
+    <a href='#'>ABOUT </a>
+    .
+    <a href='./blog.html'> BLOG </a>
+    ·
+    <a href='#'> HIKES </a>
+    ·
+    <a href='#'> BREWS </a>
+    ·
+    <a href='#'> CONTACT </a>
+  </p>
+  </footer>
+</div>
+</body>
+</html>

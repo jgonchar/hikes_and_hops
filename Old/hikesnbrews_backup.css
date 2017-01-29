@@ -1,0 +1,423 @@
+/*General Styles*/
+body {
+  color: #545454;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+button {
+  border-radius: 3px;
+  font-size: 16px;
+  background-color:  #33383b;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  float: left;
+}
+button:hover {
+  background-color:  #5c666b;
+}
+/*Logo Heading*/
+#logobar {
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  min-height: 120px;
+}
+#logobar img {
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+/*Navigation Menu*/
+#navbar {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #292c2f;
+  min-height: 60px;
+  /*text-align: center;*/
+}
+.nav-tile {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  float: left;
+  margin: 0 5px 0 5px;
+}
+.nav-search {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  float: right;
+}
+.nav-tile a {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 18px 30px;
+  text-decoration: none;
+}
+.dropdown-content a {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #4caf50;
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1; /* Necessary to maintain hover precedence */
+  background-color: #f9f9f9;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+  color: black;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #eaeaea;
+}
+
+/*Search Bar*/
+.searchbar {
+  width: 300px;
+  white-space: nowrap;
+  position: relative;
+  margin-top: 15px;
+}
+.searchbar input#search {
+  width: 250px;
+  height: 30px;
+  background: #fff;
+  border: none;
+  font-size: 10pt;
+  float: right;
+  margin-right: 20px;
+  color: #63717f;
+  padding-left: 45px;
+  padding-right: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.searchbar input#search::-webkit-input-placeholder {
+  color: #65737e;
+}
+.searchbar .icon {
+  position: absolute;
+  margin-left: 45px;
+  margin-top: 4px;
+  top: 50%;
+  z-index: 1;
+  color: #65737e;
+}
+
+/*Landing Page Picture*/
+.splash {
+  height: 600px;
+  min-width: 1200px;
+  background-image: url(http://eskipaper.com/images/mountain-lake-summer-1.jpg);
+  background-size: 100%;
+  color: white;
+  text-align: center;
+  font-family: arial;
+  font-size: 60px;
+  font-weight: bold;
+}
+.splash-heading {
+  padding-top: 347px;
+  line-height: .8;
+  -webkit-box-reflect: below -5px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.2)));
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container hr {
+  margin-top: 10px;
+}
+/*Hike search bar*/
+#hike-search {
+  /*height: 550px;*/
+  background-color: #292c2f;
+}
+#hike-search h2, #hike-search h3, #hike-search h4 {
+  color: white;
+}
+#hike-search h2 {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center; 
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+.hike-searchbar {
+  white-space: nowrap;
+  position: relative;
+  margin: 30px 0 0 320px;
+  padding-bottom: 20px;
+}
+.hike-searchbar input#hike-search {
+  width: 600px;
+  height: 50px;
+  background: #fff;
+  border: none;
+  font-size: 16px;
+  color: #63717f;
+  padding-left: 10px;
+  padding-right: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.searchbar input#hike-search::-webkit-input-placeholder {
+  color: #65737e;
+}
+.hike-searchbar button{
+  margin-top: 10px;
+  padding: 15px 50px;
+  margin-bottom: 0;
+  float: left;
+}
+.hike-searchbar button:hover {
+  background-color:  #5c666b;
+}
+.vertical-line{
+  border-left: 2px solid white;
+  margin: 10px 0 0 180px;
+  padding: 10px 10px 10px 30px; 
+  color: white;
+  font-size: 18px;
+}
+.vertical-line a{
+  color: white;
+  text-decoration: none;
+}
+.vertical-line a:hover{
+  color: #4caf50;
+}
+.column button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  float: left;
+}
+.read-more-link {
+  overflow: auto;
+  display: block;  
+}
+.column-20{
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+.column-30{
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+/*Advanced hike search bar*/
+#advanced-search-toggle .fa-minus-circle{
+  display: none;
+}
+#advanced-search-toggle .fa{
+  color: white;
+}
+#advanced-search {
+  height: 15em;
+  padding-bottom: 10px;
+  display: none;
+}
+#advanced-search ul{
+  list-style:none;
+  padding: 0;
+  color: white;
+  margin-top: 0;
+}
+#advanced-search h3{
+  margin-bottom: 5px;
+}
+/*Main Page content*/
+.subhead {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+.subhead h3 {
+  font: normal 36px 'Trebuchet MS', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.subhead h3 span {
+ color: #4caf50;
+ font: normal 32px 'Brush Script MT', cursive;
+ margin: 0;
+}
+.column {
+  position: relative;
+  float: left;
+  margin-top: 10px;
+}
+.column h2 {
+  font-size: 25px;
+  color: black;
+}
+.column p {
+  font-size: 16px;
+}
+.column a {
+  color: #545454;
+  text-decoration: none;
+  font-weight: bold;
+}
+.column a:hover {
+  color: #4caf50;
+}
+#center {
+  width: 31%;
+  padding: 0 20px;  /*border: 1px solid black;*/
+}
+#left {
+  width: 31%;
+  padding: 0 20px 0 0;  /*border: 1px solid black;*/
+  height: 300px;
+}
+#right {
+  width: 31%;
+  padding: 0 0 0 20px;  /*border: 1px solid black;*/
+  height: 300px;
+}
+
+/* Footer */
+.footer{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+  padding-top: 30px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+/* Footer left */
+.footer .footer-left{
+  float: left;
+  width: 35%;
+  font: 16px sans-serif;
+  color: #5c666b;
+  text-decoration: none;
+}
+.footer .footer-left a{
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+.footer .footer-left a:hover {
+  color: #4caf50;
+}
+.footer .footer-about {
+  font: bold 18px sans-serif;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Footer links */
+.footer .footer-links{
+  color:  #ffffff;
+  margin: 10px 0 30px 0;
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
+}
+.footer .footer-links a{
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+.footer .footer-links a:hover{
+  color: #4caf50;
+}
+
+/* Footer Right */
+.footer .footer-right{
+  float: right;
+  width: 50%;
+}
+.footer .footer-right p{
+  font: bold 18px sans-serif;
+  color: white;
+  display: block;
+  margin: 15px 220px 0 0;
+  color: #ffffff;
+  margin-bottom: 20px;
+  float: right;
+}
+
+/* Join form */
+.footer form{
+  display: block;
+  float: right;
+}
+.footer form input{
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color:  #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color:  #d1d2d2;
+  width: 400px;
+  padding: 18px;
+  float: right;
+}
+.footer ::-webkit-input-placeholder {
+  color:  #5c666b;
+}
+.footer ::-moz-placeholder {
+  color:  #5c666b;
+  opacity: 1;
+}
+.footer :-ms-input-placeholder{
+  color:  #5c666b;
+}
+.footer form input{
+  height: 25px;
+  margin-bottom: 15px;
+  float: right;
+}
+.footer form button{
+  padding: 15px 50px;
+  float: right;
+  margin-left: 100px;
+}
+
+.footer form button:hover {
+  background-color:  #5c666b;
+}
