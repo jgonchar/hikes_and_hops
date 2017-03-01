@@ -19,26 +19,14 @@ h2 {
   padding-top: 30px;
 }
 
-.row {
-  padding-bottom: 20px;
-}
-
-.one-third p {
+.one-third {
+  padding: 20px 0 40px 0;
+  p {
   height: 70px;
-}
-
-/* Footer */
-
-.footer {
-  background-color: #33383b;
-  margin-top: 20px;
-  width: 100%;
-  padding-top: 30px;
-  overflow: hidden;
+  }
 }
 
 /*Hike search bar*/
-
 .hike-searchbar {
   position: relative;
   padding-top: 275px;
@@ -56,6 +44,7 @@ h2 {
     border-bottom-right-radius: 5px;
     &:hover {
       background-color: #65737e;
+      color: white;
     }
   }
 }
@@ -76,4 +65,18 @@ h2 {
 
 .searchbar input#hike-search::-webkit-input-placeholder {
   color: #65737e;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #33383b;
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 30px;
+  overflow: hidden;
+  button {
+    border: 1px solid white;
+    font-weight: normal;
+  }
 }

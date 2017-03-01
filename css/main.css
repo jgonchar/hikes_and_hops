@@ -92,8 +92,9 @@ li a:hover {
   padding-top: 30px;
   overflow: hidden;
   color: white; }
-  .footer.input {
-    color: #D1D1D1; }
+  .footer button {
+    border: 1px solid white;
+    font-weight: normal; }
 
 .four a {
   font-weight: bold; }

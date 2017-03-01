@@ -118,8 +118,9 @@ li a:hover {
   padding-top: 30px;
   overflow: hidden;
   color: white;
-  &.input {
-    color: #D1D1D1;
+  button {
+    border: 1px solid white;
+    font-weight: normal;
   }
 }
 

@@ -14,19 +14,10 @@ h2 {
   font-size: 35px;
   padding-top: 30px; }
 
-.row {
-  padding-bottom: 20px; }
-
-.one-third p {
-  height: 70px; }
-
-/* Footer */
-.footer {
-  background-color: #33383b;
-  margin-top: 20px;
-  width: 100%;
-  padding-top: 30px;
-  overflow: hidden; }
+.one-third {
+  padding: 20px 0 40px 0; }
+  .one-third p {
+    height: 70px; }
 
 /*Hike search bar*/
 .hike-searchbar {
@@ -44,7 +35,8 @@ h2 {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
     .hike-searchbar a:hover {
-      background-color: #65737e; }
+      background-color: #65737e;
+      color: white; }
 
 #hike-search {
   width: 600px;
@@ -61,5 +53,16 @@ h2 {
 
 .searchbar input#hike-search::-webkit-input-placeholder {
   color: #65737e; }
+
+/* Footer */
+.footer {
+  background-color: #33383b;
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 30px;
+  overflow: hidden; }
+  .footer button {
+    border: 1px solid white;
+    font-weight: normal; }
 
 /*# sourceMappingURL=home.css.map */
