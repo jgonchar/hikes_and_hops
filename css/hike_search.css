@@ -1,10 +1,7 @@
-h1 {
-
-}
 /*Find a Hike search*/
 .findhike-searchbar {
-  position: relative;
-}
+  position: relative; }
+
 #findhike-search {
   width: 600px;
   height: 50px;
@@ -16,42 +13,77 @@ h1 {
   padding-right: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
+
 .searchbar input#hike-search::-webkit-input-placeholder {
-  color: #65737e;
-}
+  color: #65737e; }
 
 /*Search button*/
 #hikesearch-submit button {
-  margin: 10px 20px 0 0;
-}
+  margin: 10px 20px 20px 0; }
+
 /*Advanced hike search bar*/
-#advanced-search{
-  margin: 10px 0 20px 0;
-  padding: 10px 0 10px 0; 
-  color: #292c2f;
-  font-size: 18px;
-}
-#advanced-search a{
-  text-decoration: none;
-}
-#advanced-search a:hover{
-  color: #4caf50;
-}
-#advanced-search-toggle .fa-minus-circle{
-  display: none;
-}
+#advanced-search-toggle .fa-minus-circle {
+  display: none; }
+
 #advanced-search-options {
-  height: 15em;
+  height: 27em;
   padding-bottom: 10px;
-  display: none;
-}
-#advanced-search-options ul{
-  list-style:none;
-  padding: 0;
-  margin-top: 0;
-}
-#advanced-search-options h3{
-  margin-bottom: 5px;
-}
+  display: none; }
+  #advanced-search-options .column {
+    margin-left: 30px; }
+  #advanced-search-options li {
+    margin-bottom: 0; }
+  #advanced-search-options ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0; }
+  #advanced-search-options h4 {
+    margin-bottom: 5px; }
+  #advanced-search-options label {
+    display: inline-block;
+    padding: 0 0 0 10px; }
+  #advanced-search-options select {
+    margin-bottom: 50px; }
+
+#hike-search-results h4 {
+  color: #4caf50;
+  margin-bottom: 0; }
+#hike-search-results .column {
+  margin-left: 0;
+  padding-right: 20px;
+  min-height: 275px; }
+#hike-search-results .two-thirds p {
+  margin-top: 10px;
+  width: 100%; }
+#hike-search-results .icon {
+  display: block;
+  padding-bottom: 10px; }
+#hike-search-results img {
+  width: 100%;
+  max-height: 25%;
+  padding-bottom: 20px; }
+#hike-search-results p {
+  margin-top: 0; }
+#hike-search-results .fa {
+  color: #545454; }
+#hike-search-results .page-numbers {
+  letter-spacing: 1px;
+  display: inline;
+  float: right;
+  clear: both; }
+#hike-search-results .next-page {
+  float: left;
+  padding-right: 930px;
+  letter-spacing: 5px; }
+#hike-search-results a {
+  font-weight: bold; }
+
+hr {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=hike_search.css.map */
+
+/*# sourceMappingURL=hike_search.css.map */
